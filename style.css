@@ -4,8 +4,11 @@
 }
 
 body {
+  display: block;
   font-family: "Inter";
   font-weight: 400;
+  margin: auto;
+  max-width: 1920px;
 }
 
 /* надо увиличть кликабельную зону ссылок */
@@ -19,18 +22,21 @@ body {
   justify-content: space-evenly;
   align-items: center;
   position: sticky;
+  width: 100%;
 }
 
 .logo {
   align-items: center;
+  padding: 20px
 }
 
 .nav-center > a {
-  margin: 0 20px;
+  padding: 20px;
   color: #35414b;
 }
 
 .nav-login > a {
+  padding: 20px;
   color: #35414b;
 }
 
@@ -42,10 +48,10 @@ body {
   background-color: #ece5ff;
   border: none;
   border-radius: 5px;
-  margin: 10px 20px;
+  margin: 10px 0;
   font-size: 16px;
   color: #794cff;
-  font-weight: 500;
+  font-weight: 600;
   padding: 15px 20px;
 }
 
@@ -85,7 +91,7 @@ body {
 .head-title {
   display: block;
   margin: auto;
-  width: 60%;
+  width: 900px;
   text-align: center;
 }
 
@@ -127,10 +133,21 @@ h1 {
   border-left: none;
   border-radius: 4px;
   font-size: 16px;
+  font-weight: 600;
   background-color: #794cff;
   color: white;
   float: right;
 }
+
+/* искривленная линия */
+/* .curved-line {
+  display: block;
+  box-sizing: border-box;
+  height: 500px;
+  border: 1px solid #F0EBFA;
+  background-color: #fbfafe;
+  clip-path: ellipse(75% 100% at 50% 0%);
+} */
 
 .submit-email:hover {
   background-color: #ece5ff;
@@ -140,14 +157,64 @@ h1 {
 
 .content-first {
   display: flex;
-  flex-direction: column;
-}
-
-.content-first > img {
-  width: 70%;
-  align-self: center;
+  justify-content: center;
 }
 
 .text-under-image {
-  margin: 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.small-text {
+  color: #4E5A65;
+}
+
+.head-text {
+  color: #35414B;
+}
+
+.companies {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-second {
+  background-color: #FBFAFE;
+  border: 1px solid #F0EBFA;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  padding: 60px 0;
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.content-second-image {
+  margin-right: 50px;
+}
+
+.content-second-text-columns {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.first-column {
+  background-color: #F6F3FC;
+  border-left: 8px solid #794CFF;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.text-column {
+  box-sizing: border-box;
+  padding: 10px 30px;
+  width: 380px;
+}
+
+.with-bottom-line {
+  border-bottom: 1px solid #F0EBFA;
 }
