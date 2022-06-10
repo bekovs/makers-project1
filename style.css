@@ -53,7 +53,6 @@ body {
   color: #794cff;
   font-weight: 600;
   padding: 15px 20px;
-  cursor: pointer;
 }
 
 .get-started-button:hover {
@@ -138,7 +137,6 @@ h1 {
   background-color: #794cff;
   color: white;
   float: right;
-  cursor: pointer;
 }
 
 /* искривленная линия */
@@ -266,14 +264,14 @@ h1 {
   align-items: center;
   justify-content: space-between;
 } */
-/* html,
+html,
 body,
 div,
 span,
 applet,
 object,
 iframe,
-
+h1,
 h2,
 h3,
 h4,
@@ -355,7 +353,7 @@ video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-/* article,
+article,
 aside,
 details,
 figcaption,
@@ -367,7 +365,7 @@ menu,
 nav,
 section {
   display: block;
-} */
+}
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
   font-family: "Inter", sans-serif;
@@ -383,22 +381,21 @@ body {
 .uslugi {
   display: flex;
   flex-direction: column;
-  padding: 100px 50px;
-  width: 306px;
+  padding: 100px;
 }
 .img21 {
   align-items: center;
-  width: 80px;
+  width: 100px;
 }
 #first {
   font-size: 20px;
   font-weight: 600;
-  padding-top: 30px;
+  padding-top: 24px;
   color: rgb(53, 65, 75);
 }
 #second {
   font-size: 17px;
-  padding-top: 10px;
+  padding-top: 5px;
   color: rgb(78, 90, 101);
 }
 .main {
@@ -411,12 +408,9 @@ body {
   color: rgb(53, 65, 75);
 }
 .box {
-  padding: 68px 0;
-  background-color: #fbfafe;
-  border: 1px solid #f0ebfa;
-  border-left: none;
-  border-right: none;
-  width: 100%;
+  padding-top: 68px;
+  padding-bottom: 68px;
+  background-color: rgb(240, 235, 250);
   display: flex;
   justify-content: center;
 }
@@ -427,7 +421,6 @@ body {
 .small {
   padding-top: 24px;
   padding-bottom: 32px;
-  line-height: 25px;
 }
 .button {
   font-size: 16px;
@@ -437,10 +430,9 @@ body {
   height: 48px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
 }
 .img-box {
-  padding-left: 100px;
+  padding-left: 250px;
 }
 #Big {
   display: flex;
@@ -454,7 +446,6 @@ body {
   text-align: center;
   padding-top: 48px;
   padding-bottom: 0;
-  line-height: 30px;
 }
 #people-text {
   font-weight: 600;
@@ -477,13 +468,12 @@ body {
 }
 .people-1 {
   display: flex;
-  width: 264px;
   flex-direction: row;
-  justify-content: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   padding-top: 15px;
 }
+<<<<<<< HEAD
 
 .people_border {
   border-top: 5px solid rgb(53, 65, 75);
@@ -493,6 +483,11 @@ body {
   border-top: 5px solid rgb(53, 65, 75);
 } */
 
+=======
+.people-1:hover {
+  border-top: 5px solid rgb(53, 65, 75);
+}
+>>>>>>> 6a7aa99700a067f1298b12929a7a239e1e3e51a8
 .break {
   width: 1110px;
   height: 224px;
@@ -525,7 +520,8 @@ body {
   background-color: rgb(29, 40, 48);
   margin: 0;
   margin-top: 100px;
-  border: 2px solid gray;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 0 140px;
 }
 .footer-txt {
   display: flex;
@@ -538,6 +534,9 @@ body {
   background-color: rgb(29, 40, 48);
   margin: 0;
   color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .img-underfooter {
   padding: 10px 0;
@@ -553,4 +552,13 @@ body {
 .txt {
   font-size: 14px;
   color: #d9dbe1;
+  padding: 33px 0;
+}
+.under-ffoter_img {
+  padding: 33px 0;
+}
+.under-footer_container {
+  width: 1110px;
+  display: flex;
+  justify-content: space-between;
 }
