@@ -489,9 +489,10 @@ body {
   border-top: 5px solid rgb(53, 65, 75);
 }
 
-.people-1:hover {
-  /* border-top: 5px solid rgb(53, 65, 75); */
-}
+/* .people-1:hover {
+  border-top: 5px solid rgb(53, 65, 75);
+} */
+
 .break {
   width: 1110px;
   height: 224px;
