@@ -3,12 +3,14 @@
   text-decoration: none;
 }
 
-body {
+body,
+html {
   display: block;
   font-family: "Inter";
   font-weight: 400;
   margin: auto;
-  max-width: 1920px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* надо увиличть кликабельную зону ссылок */
@@ -524,7 +526,7 @@ body {
   background-color: rgb(29, 40, 48);
   margin: 0;
   margin-top: 100px;
-  border: 2px solid gray;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 .footer-txt {
   display: flex;
@@ -537,9 +539,13 @@ body {
   background-color: rgb(29, 40, 48);
   margin: 0;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 .img-underfooter {
   padding: 10px 0;
+  width: 162px;
+  height: 48px;
 }
 .dvig {
   padding: 5px 0;
@@ -552,4 +558,15 @@ body {
 .txt {
   font-size: 14px;
   color: #d9dbe1;
+}
+.under-footer_container {
+  width: 1110px;
+  display: flex;
+  justify-content: space-between;
+  padding: 33px 0;
+}
+.footer-container {
+  width: 1110px;
+  display: flex;
+  justify-content: space-between;
 }
