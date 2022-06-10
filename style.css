@@ -473,21 +473,11 @@ body {
   margin-right: 100px;
   padding-top: 15px;
 }
-<<<<<<< HEAD
 
 .people_border {
   border-top: 5px solid rgb(53, 65, 75);
 }
 
-/* .people-1:hover {
-  border-top: 5px solid rgb(53, 65, 75);
-} */
-
-=======
-.people-1:hover {
-  border-top: 5px solid rgb(53, 65, 75);
-}
->>>>>>> 6a7aa99700a067f1298b12929a7a239e1e3e51a8
 .break {
   width: 1110px;
   height: 224px;
