@@ -53,6 +53,7 @@ body {
   color: #794cff;
   font-weight: 600;
   padding: 15px 20px;
+  cursor: pointer;
 }
 
 .get-started-button:hover {
@@ -137,6 +138,7 @@ h1 {
   background-color: #794cff;
   color: white;
   float: right;
+  cursor: pointer;
 }
 
 /* искривленная линия */
@@ -381,21 +383,22 @@ body {
 .uslugi {
   display: flex;
   flex-direction: column;
-  padding: 100px;
+  padding: 100px 50px;
+  width: 306px;
 }
 .img21 {
   align-items: center;
-  width: 100px;
+  width: 80px;
 }
 #first {
   font-size: 20px;
   font-weight: 600;
-  padding-top: 24px;
+  padding-top: 30px;
   color: rgb(53, 65, 75);
 }
 #second {
   font-size: 17px;
-  padding-top: 5px;
+  padding-top: 10px;
   color: rgb(78, 90, 101);
 }
 .main {
@@ -408,9 +411,12 @@ body {
   color: rgb(53, 65, 75);
 }
 .box {
-  padding-top: 68px;
-  padding-bottom: 68px;
-  background-color: rgb(240, 235, 250);
+  padding: 68px 0;
+  background-color: #fbfafe;
+  border: 1px solid #f0ebfa;
+  border-left: none;
+  border-right: none;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -421,6 +427,7 @@ body {
 .small {
   padding-top: 24px;
   padding-bottom: 32px;
+  line-height: 25px;
 }
 .button {
   font-size: 16px;
@@ -430,9 +437,10 @@ body {
   height: 48px;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 .img-box {
-  padding-left: 250px;
+  padding-left: 100px;
 }
 #Big {
   display: flex;
@@ -446,6 +454,7 @@ body {
   text-align: center;
   padding-top: 48px;
   padding-bottom: 0;
+  line-height: 30px;
 }
 #people-text {
   font-weight: 600;
@@ -468,13 +477,20 @@ body {
 }
 .people-1 {
   display: flex;
+  width: 264px;
   flex-direction: row;
-  margin-left: 100px;
-  margin-right: 100px;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
   padding-top: 15px;
 }
-.people-1:hover {
+
+.people_border {
   border-top: 5px solid rgb(53, 65, 75);
+}
+
+.people-1:hover {
+  /* border-top: 5px solid rgb(53, 65, 75); */
 }
 .break {
   width: 1110px;
