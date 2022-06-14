@@ -31,12 +31,22 @@ html {
   color: #35414b;
 }
 
+.nav-burger__center > a {
+  padding: 5%;
+  color: #35414b;
+}
+
 .navbar__login > a {
   padding: 20px;
   color: #35414b;
 }
 
-.navbar__login > a:hover {
+.nav-burger__login > a {
+  padding: 5% 10%;
+  color: #35414b;
+}
+
+.navbar__login, .nav-burger__login > a:hover {
   color: #9f9f9f;
 }
 
@@ -52,12 +62,31 @@ html {
   cursor: pointer;
 }
 
-.navbar__login_get-started-button:hover {
+.nav-burger__login_get-started-button {
+  background-color: #ece5ff;
+  border: none;
+  border-radius: 3%;
+  margin: 5% 0;
+  font-size: 1.2vw;
+  color: #794cff;
+  font-weight: 600;
+  padding: 5% 7%;
+  cursor: pointer;
+}
+
+.nav-burger__login {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__login_get-started-button:hover, .nav-burger__login_get-started-button:hover {
   background-color: #794cff;
   color: white;
 }
 
-.navbar__center_link:hover {
+.navbar__center_link:hover, .nav-burger__center_link:hover {
   color: #9f9f9f;
 }
 
@@ -202,6 +231,13 @@ html {
   box-sizing: border-box;
   padding: 10px 30px;
   width: 380px;
+}
+
+.content-second__text-columns_column:hover {
+  background-color: #f6f3fc;
+  border-left: 8px solid #794cff;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .with-bottom-line {
@@ -445,3 +481,69 @@ html {
   font-weight: 600;
   padding-bottom: 10px;
 }
+
+#burger-menu {
+  position: fixed;
+  top: 5%;
+  left: 80%;
+  width: 20px;
+  height: 20px;
+  /* display: none; */
+  border: none;
+  border-radius: 2px;
+  padding: 0px;
+  margin: 0px;
+  background: linear-gradient(
+      to bottom, 
+      rgb(121, 110, 255), rgb(121, 110, 255) 20%, 
+      white 20%, white 40%, 
+      rgb(121, 110, 255) 40%, rgb(121, 110, 255) 60%, 
+      white 60%, white 80%, 
+      rgb(121, 110, 255) 80%, rgb(121, 110, 255) 100%
+    );
+}
+
+.nav-burger {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: -250px;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #ece5ff4f;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+#burger-input {
+  display: none;
+}
+
+#burger-input:checked + #burger-menu .nav-burger {
+  visibility: visible;
+  top: 0;
+}
+
+.nav-burger__center {
+  padding: 0 5%;
+  width: 60%;
+}
+
+.nav-burger__center_link {
+  padding: 0;
+}
+
+@media all and (max-width: 10000px) {
+  .navbar {
+    display: none;
+  }
+
+  .nav-burger {
+    font-size: 100%;
+  }
+}
+
