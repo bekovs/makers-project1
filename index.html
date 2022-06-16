@@ -37,19 +37,29 @@
     <label id="burger-menu" for="burger-input">
       <nav class="nav-burger">
         <div class="nav-burger__center">
+          <div class="nav-burger__logo">
+            <a href="index.html">
+              <img
+                class="burger__logo"
+                src="images/teamflow_white.svg"
+                alt="logo"
+                href="index.html"
+              />
+            </a>
+          </div>
           <a class="nav-burger__center_link" href="">How it works</a>
           <a class="nav-burger__center_link" href="">Product</a>
           <a class="nav-burger__center_link" href="">Pricing</a>
           <a class="nav-burger__center_link" href="">Resources</a>
         </div>
         <div class="nav-burger__login">
-          <a href="">Log in</a>
-          <button
-            class="nav-burger__login_get-started-button"
-            onclick="alert('Этот раздел находится в разработке')"
+          <a id="underline-link" href="#">Log in</a>
+          <a 
+            href="#"
+            class="nav-burger__login_get-started"
           >
             Get started free
-          </button>
+          </a>
         </div>
       </nav>
     </label>
