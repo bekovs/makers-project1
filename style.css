@@ -497,7 +497,7 @@ html {
     align-items: center;
   }
   .box__img {
-    padding-left: 0;
+    padding-left: 20%;
   }
   .people {
     display: flex;
@@ -522,6 +522,9 @@ html {
   }
 }
 @media only screen and (max-width: 768px) {
+  .box__img {
+    padding-left: 20%;
+  }
   .head-text-for-services {
     font-size: 2em;
   }
@@ -603,6 +606,9 @@ html {
   }
 }
 @media screen and (max-width: 480px) {
+  .box__img {
+    padding-left: 20%;
+  }
   .under-footer {
     border: 1px solid black;
   }
