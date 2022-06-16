@@ -31,6 +31,9 @@ html {
   color: #35414b;
 }
 
+
+
+
 .navbar__login > a {
   padding: 20px;
   color: #35414b;
@@ -650,45 +653,72 @@ html {
 #burger-menu {
   position: fixed;
   top: 5%;
-  left: 80%;
+  left: 30%;
   width: 20px;
   height: 20px;
   border: none;
-  border-radius: 2px;
   padding: 0px;
+  display: none;
   margin: 0px;
+  z-index: 5;
   background: linear-gradient(
       to bottom, 
       rgb(121, 110, 255), rgb(121, 110, 255) 20%, 
-      white 20%, white 40%, 
+      transparent 20%, transparent 40%, 
       rgb(121, 110, 255) 40%, rgb(121, 110, 255) 60%, 
-      white 60%, white 80%, 
+      transparent 60%, transparent 80%, 
       rgb(121, 110, 255) 80%, rgb(121, 110, 255) 100%
     );
-  /* position: fixed;
-  height: 60px;
-  width: 60px;
-  top: 10%;
-  left: 3%;
-  z-index: 10;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: all 0.2s ease-in-out;
-  background: rgba(255,255,255,0.2); */
 }
 
 #burger-input {
   display: none;
 }
 
-#burger-input:checked + #burger-menu .nav-burger {
+#burger-input:checked ~ .nav-burger {
   visibility: visible;
   left: 0;
 }
 
-@media all and (max-width: 10000px) {
+#burger-input:checked + #burger-menu {
+    background: linear-gradient(
+      to bottom, 
+      white, white 20%, 
+      transparent 20%, transparent 40%, 
+      white 40%, white 60%, 
+      transparent 60%, transparent 80%, 
+      white 80%, white 100%
+    );
+    z-index: 10 !important;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+  background: black;
+  z-index: 1;
+}
+
+
+#burger-input:checked ~ .overlay {
+  visibility: visible;
+  opacity: 0.4;
+}
+
+@media all and (max-width: 768px) {
   .navbar {
     display: none;
+  }
+
+  #burger-menu {
+    display: inline-block;
   }
 
   .nav-burger {
@@ -706,6 +736,7 @@ html {
     box-sizing: border-box;
     transition: 0.3s;
     font-size: 3.5vw;
+    z-index: 5;
 }
 
   .nav-burger__center {
@@ -720,7 +751,7 @@ html {
   }
 
   .nav-burger__login {
-    padding: 0 10% 10% 10%;
+    padding: 0 10% 20% 10%;
     font-weight: 700;
     display: flex;
     flex-direction: column;
