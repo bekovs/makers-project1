@@ -565,7 +565,7 @@ html {
     align-items: center;
   }
   .box__img {
-    padding-left: 0;
+    padding-left: 20%;
   }
   .people {
     display: flex;
@@ -594,7 +594,7 @@ html {
   .box__img {
     padding-left: 20%;
   }
-  
+
   .navbar {
     display: none;
   }
@@ -756,6 +756,9 @@ html {
   }
 }
 @media screen and (max-width: 480px) {
+  .box__img {
+    padding-left: 20%;
+  }
   .under-footer {
     border: 1px solid black;
   }
