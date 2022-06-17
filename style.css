@@ -31,9 +31,6 @@ html {
   color: #35414b;
 }
 
-
-
-
 .navbar__login > a {
   padding: 20px;
   color: #35414b;
@@ -475,18 +472,23 @@ html {
 }
 
 #burger-input:checked + #burger-menu {
-    background: linear-gradient(
-      to bottom, 
-      white, white 20%, 
-      transparent 20%, transparent 40%, 
-      white 40%, white 60%, 
-      transparent 60%, transparent 80%, 
-      white 80%, white 100%
-    );
-    z-index: 12 !important;
+  background: linear-gradient(
+    to bottom,
+    white,
+    white 20%,
+    transparent 20%,
+    transparent 40%,
+    white 40%,
+    white 60%,
+    transparent 60%,
+    transparent 80%,
+    white 80%,
+    white 100%
+  );
+  z-index: 12 !important;
 }
 
-.overlay{
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -494,7 +496,7 @@ html {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .35s, visibility .35s, height .35s;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
   overflow: hidden;
   background: black;
   z-index: 1;
@@ -503,7 +505,6 @@ html {
 .navbar__logo_with-burger {
   display: none;
 }
-
 
 #burger-input:checked ~ .overlay {
   visibility: visible;
@@ -519,6 +520,9 @@ html {
 }
 
 @media screen and (max-width: 1200px) {
+  .main__services_second {
+    font-size: 1em;
+  }
   .main {
     align-items: center;
     justify-content: center;
@@ -554,7 +558,7 @@ html {
     font-size: 1.5em;
   }
   .main__services_second {
-    font-size: 1.3em;
+    font-size: 1em;
   }
   .box {
     display: flex;
@@ -590,6 +594,9 @@ html {
   }
 }
 @media only screen and (max-width: 768px) {
+  .box__img {
+    padding-left: 20%;
+  }
 
   .navbar {
     display: none;
@@ -617,7 +624,7 @@ html {
     transition: 0.3s;
     font-size: 3.5vw;
     z-index: 5;
-}
+  }
 
   .nav-burger__center {
     display: flex;
@@ -642,7 +649,7 @@ html {
     padding-top: 10%;
     color: white;
   }
-  
+
   .navbar__logo_with-burger {
     display: block;
     padding: 10%;
@@ -650,7 +657,7 @@ html {
   }
 
   #underline-link::after {
-    content: '';
+    content: "";
     height: 5%;
     width: 50%;
     background-color: #ffffff;
@@ -715,7 +722,7 @@ html {
   .people {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 0%;
+    padding-bottom: 15%;
   }
   .people__first {
     width: 40%;
@@ -799,11 +806,16 @@ html {
   margin-right: 10%;
   z-index: 10;
   background: linear-gradient(
-      to bottom, 
-      rgb(121, 110, 255), rgb(121, 110, 255) 20%, 
-      transparent 20%, transparent 40%, 
-      rgb(121, 110, 255) 40%, rgb(121, 110, 255) 60%, 
-      transparent 60%, transparent 80%, 
-      rgb(121, 110, 255) 80%, rgb(121, 110, 255) 100%
-    );
+    to bottom,
+    rgb(121, 110, 255),
+    rgb(121, 110, 255) 20%,
+    transparent 20%,
+    transparent 40%,
+    rgb(121, 110, 255) 40%,
+    rgb(121, 110, 255) 60%,
+    transparent 60%,
+    transparent 80%,
+    rgb(121, 110, 255) 80%,
+    rgb(121, 110, 255) 100%
+  );
 }
