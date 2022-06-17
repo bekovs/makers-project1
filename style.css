@@ -591,6 +591,10 @@ html {
 }
 @media only screen and (max-width: 768px) {
 
+  .box__img {
+    padding-left: 20%;
+  }
+  
   .navbar {
     display: none;
   }
