@@ -182,7 +182,13 @@ html {
 }
 
 .content-second__image {
+  align-self: center;
   margin-right: 50px;
+}
+
+.content-second__image img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .content-second__text-columns {
@@ -532,7 +538,7 @@ html {
 }
 
 .content-second__image img {
-  width: 80%;
+  width: 90%;
 }
 
 .content-second__text-columns {
@@ -619,6 +625,29 @@ html {
 
   .content-first__container_text-under-image {
     font-size: 0.9rem;
+  }
+
+  .content-second {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+  }
+
+  .content-second__text-columns {
+    padding-top: 10%;
+  }
+
+  .content-second__image {
+    margin: 0;
+  }
+
+  .content-second__text-columns_column {
+    width: 80%;
+  }
+
+  .content-second__text-columns {
+    align-items: center;
+    margin: 0;
   }
 
   .main__services_first {
